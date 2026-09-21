@@ -4,7 +4,8 @@ on:
     types: [opened, reopened, edited, synchronize]
 
 jobs:
-  main:
+  check-title:
+    name: Проверка заголовка
     runs-on: ubuntu-latest
     permissions:
       pull-requests: read
