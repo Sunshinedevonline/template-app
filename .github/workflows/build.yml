@@ -1,0 +1,10 @@
+name: Build
+
+on:
+  pull_request:
+  push:
+    branches: [main, 'release/**', staging, production]
+
+jobs:
+  build:
+    uses: Sunshinedevonline/ci-templates/.github/workflows/build-maven.yml@main
